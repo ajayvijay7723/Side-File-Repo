@@ -1,0 +1,1228 @@
+{
+  "id": "2a001de9-19b8-4662-93aa-2a0a9c2bcf22",
+  "version": "2.0",
+  "name": "cerebro -Admin Certificate Management Module   TC2",
+  "url": "https://cerebro.icrewsystems.com/dashboard/certificates",
+  "tests": [{
+    "id": "9eea0eef-be8c-4e89-9053-eecd58ceaeba",
+    "name": "1.Verify Total Certificate Users count",
+    "commands": [{
+      "id": "78439054-4519-4c9f-9e99-2e9a92a46466",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf7427b5-0016-4b28-a366-91916442862e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06a83bd1-e4f7-45d7-93dd-49ca7acdd956",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3271f60c-3604-40a2-9f81-251139e8e235",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ajay.b@icrewsystems.com"
+    }, {
+      "id": "e40c31a1-2d34-479f-8d3e-93b4ce7ec8ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "Y8Xfg(Rd"
+    }, {
+      "id": "0c6314a6-2460-46bd-8fa9-71e492fa9b0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_button",
+      "targets": [
+        ["id=login_button", "id"],
+        ["css=#login_button", "css:finder"],
+        ["xpath=//button[@id='login_button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Authenticate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e2b1b3a-9262-446a-99b5-7ba6c5870d36",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Modules",
+      "targets": [
+        ["linkText=Modules", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='navbar-menu']/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#navbar-help')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Modules')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95cfbcac-1593-4b58-9cd2-7e3d7959e954",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Certificate Manager",
+      "targets": [
+        ["linkText=Certificate Manager", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Certificate Manager')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-menu']/div/div/ul/li[3]/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/certificates')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Certificate Manager')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7c2d97f-c191-47e9-8848-7771f914d2c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Certificate Users",
+      "targets": [
+        ["linkText=Certificate Users", "linkText"],
+        ["css=.gap-1:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/certificates/users')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Certificate Users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b42e4622-c7de-411e-b976-d1d1aae1ae81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add User",
+      "targets": [
+        ["linkText=Add User", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/certificates/users/create')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "922ea5d9-d90b-43c9-9359-8224597cd4ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b05001c-98d3-4bca-b4ce-2beb8a74eb3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ajay test"
+    }, {
+      "id": "02f781c1-f9aa-4d11-a188-27bc44e199a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0cd81b1-eea5-4138-8ca2-e0bd8e666263",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "ajayvijay77723@gmail.com"
+    }, {
+      "id": "f9b72be2-7fbd-44cf-9dcc-6c2fc70d2cd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4dc7767a-14bb-41c6-881c-6bb9873ca046",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/certificates')])[3]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d9ed458f-b7a4-4baf-94d4-0ab89d20735a",
+    "name": "2.Verify Total Certificates count",
+    "commands": [{
+      "id": "d0688cbe-c8d0-4173-bc1d-1626043c5d72",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f683b3d-8c03-4b40-bca2-65d1cbaaec61",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b15af564-4648-4f8a-94c9-90a96a94728a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Certificate",
+      "targets": [
+        ["linkText=Add New Certificate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Certificate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b759759-3e34-4069-baf2-f7b43b8492d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f60b22bb-f8f3-43ac-902d-79bcfabcf542",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a2481f1-524d-4237-bc6c-96537f0768b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2d182b3-d283-42f1-b479-18754427ea49",
+      "comment": "",
+      "command": "select",
+      "target": "id=certificate_user_id",
+      "targets": [],
+      "value": "label=ajay.b"
+    }, {
+      "id": "3c3a1738-a5cb-4f82-9c88-a97e7c3c15c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Proceed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a16390e-d553-41f8-9384-ef3c21f5bf3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_name",
+      "targets": [
+        ["id=certificate_name", "id"],
+        ["name=name", "name"],
+        ["css=#certificate_name", "css:finder"],
+        ["xpath=//input[@id='certificate_name']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f1d3215-9091-4619-a6d6-517200ad1c1a",
+      "comment": "",
+      "command": "type",
+      "target": "id=certificate_name",
+      "targets": [
+        ["id=certificate_name", "id"],
+        ["name=name", "name"],
+        ["css=#certificate_name", "css:finder"],
+        ["xpath=//input[@id='certificate_name']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "ajay.b tets"
+    }, {
+      "id": "82d2c1e9-9ad1-4c51-9c62-0517a6cc1bf6",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_alert",
+      "targets": [
+        ["id=user_alert", "id"],
+        ["name=user_alert", "name"],
+        ["css=#user_alert", "css:finder"],
+        ["xpath=//input[@id='user_alert']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7c0a120-8a55-495b-9392-c3713498e160",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filepond--label-action",
+      "targets": [
+        ["css=.filepond--label-action", "css:finder"],
+        ["xpath=//label[@id='filepond--drop-label-u93jmqhkz']/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de730436-7f65-402d-822b-db388c270e05",
+      "comment": "",
+      "command": "type",
+      "target": "id=filepond--browser-u93jmqhkz",
+      "targets": [
+        ["id=filepond--browser-u93jmqhkz", "id"],
+        ["name=file", "name"],
+        ["css=#filepond--browser-u93jmqhkz", "css:finder"],
+        ["xpath=//input[@id='filepond--browser-u93jmqhkz']", "xpath:attributes"],
+        ["xpath=//div[@id='file']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\th.jpeg"
+    }, {
+      "id": "f1f3cd0e-fd73-467d-934c-d83a7329a73f",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_alert",
+      "targets": [
+        ["id=user_alert", "id"],
+        ["name=user_alert", "name"],
+        ["css=#user_alert", "css:finder"],
+        ["xpath=//input[@id='user_alert']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "965f65c8-1af6-4e91-bd41-bcfaf8212408",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-flex > .btn-primary",
+      "targets": [
+        ["css=.d-flex > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c125ddfc-7c4b-40fa-bcf5-5d9a2f817e41",
+    "name": "3.Validate table data rendering",
+    "commands": [{
+      "id": "8493e883-b777-4ad7-8283-60e4f5ef08fa",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d85e1e63-767c-41a9-8aa4-39305cff7274",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a341f2f3-83cf-4c40-8bf8-06e2ca0b71c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sorting:nth-child(6)",
+      "targets": [
+        ["css=.sorting:nth-child(6)", "css:finder"],
+        ["xpath=//table[@id='certificate_table']/thead/tr/th[6]", "xpath:idRelative"],
+        ["xpath=//th[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4e36ae9-a17c-4cc5-a98d-06ee2e13c447",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting:nth-child(1)",
+      "targets": [
+        ["css=.sorting:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='certificate_table']/thead/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'ID')]", "xpath:innerText"]
+      ],
+      "value": "ID"
+    }, {
+      "id": "cbe0a96c-11d2-4d85-9447-bb4ff2a6d584",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting:nth-child(2)",
+      "targets": [
+        ["css=.sorting:nth-child(2)", "css:finder"],
+        ["xpath=//table[@id='certificate_table']/thead/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"]
+      ],
+      "value": "NAME"
+    }, {
+      "id": "88f1093a-9ad8-4d67-a3a3-2d2f94095da4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting:nth-child(4)",
+      "targets": [
+        ["css=.sorting:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='certificate_table']/thead/tr/th[4]", "xpath:idRelative"],
+        ["xpath=//th[4]", "xpath:position"]
+      ],
+      "value": "FILE HEALTH"
+    }, {
+      "id": "54c936a8-029d-448f-bc96-d7c7e8ad6882",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting:nth-child(5)",
+      "targets": [
+        ["css=.sorting:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='certificate_table']/thead/tr/th[5]", "xpath:idRelative"],
+        ["xpath=//th[5]", "xpath:position"]
+      ],
+      "value": "ISSUED BY"
+    }, {
+      "id": "26334a79-645d-45eb-af46-1e11d8c5921d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting_desc",
+      "targets": [
+        ["css=.sorting_desc", "css:finder"],
+        ["xpath=//table[@id='certificate_table']/thead/tr/th[6]", "xpath:idRelative"],
+        ["xpath=//th[6]", "xpath:position"]
+      ],
+      "value": "ACTIONS"
+    }]
+  }, {
+    "id": "41db6c27-d9f7-4eeb-9b48-8d179469fbe4",
+    "name": "4.Validate Add Certificate button",
+    "commands": [{
+      "id": "7ba036a0-592f-4af7-beec-1681e7f0ac6f",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9569017-9624-4d5a-8d4c-a095f7c5a1a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23050f7d-ef4b-411d-9327-56c06b96e2d0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Certificate",
+      "targets": [
+        ["linkText=Add New Certificate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Certificate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d152347-007d-48dc-977e-c75806e95e0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificateModal",
+      "targets": [
+        ["id=certificateModal", "id"],
+        ["css=#certificateModal", "css:finder"],
+        ["xpath=//div[@id='certificateModal']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "db49dad0-6bd6-423e-85ee-2756f321ac9e",
+    "name": "5.Verify Certificate Users button",
+    "commands": [{
+      "id": "cdad3301-a7d3-4f6e-bc2b-9e5937e51cfc",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2435d4f9-0d7f-4c71-8b6d-0fe91e5c8ccf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f988122f-ec27-417f-aa4b-c374aaa03712",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Certificate Users",
+      "targets": [
+        ["linkText=Certificate Users", "linkText"],
+        ["css=.gap-1:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/certificates/users')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Certificate Users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fbb04fcf-ab8d-4fa9-9191-bef38b578ceb",
+    "name": "6.Validate Add User button in modal",
+    "commands": [{
+      "id": "30299134-ad32-4ec8-9607-245b9edfde7a",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fceacbae-21eb-46f4-afc2-7dea5f22c90e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24750bac-313b-4549-988c-2ec3c5a36203",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Certificate",
+      "targets": [
+        ["linkText=Add New Certificate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Certificate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c33d86a5-cd7c-4b60-a91f-016f4095748e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-secondary",
+      "targets": [
+        ["css=.btn-outline-secondary", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "42ca5c42-737a-40b8-8cc9-b51e71ae7786",
+    "name": "7,Validate modal data retention on reopening",
+    "commands": [{
+      "id": "f2c23e51-961e-459f-b221-aa745bfa4ac7",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cad5b5a-1fc8-483b-a8a4-9fa39f658aa3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81f2fe76-3696-4a56-bfef-e90fab14c79b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Certificate",
+      "targets": [
+        ["linkText=Add New Certificate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Certificate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31e818c8-8954-4327-a22d-0a86460c6876",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "824c4526-3539-470f-8056-cde4c0a8feb9",
+      "comment": "",
+      "command": "select",
+      "target": "id=certificate_user_id",
+      "targets": [],
+      "value": "label=ajay.b"
+    }, {
+      "id": "5493822f-dc07-4fec-b8d2-f9cb91f212cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c4ee1df-f992-4f21-83bf-e97f593924e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificateModal",
+      "targets": [
+        ["id=certificateModal", "id"],
+        ["css=#certificateModal", "css:finder"],
+        ["xpath=//div[@id='certificateModal']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f7ef2e7-fe67-4431-9854-57e936eba6a1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Certificate",
+      "targets": [
+        ["linkText=Add New Certificate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Certificate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5caf1ece-65fa-431c-b760-38021ba9dc84",
+    "name": "9.Validate Add User button",
+    "commands": [{
+      "id": "3e7827d3-5c4a-496f-b4ef-5dfd93b69738",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff93854f-188b-407b-97a5-0c0b0631dfeb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ecc0e88-c574-4a23-a352-0ea822fda0eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-tabler-user-star",
+      "targets": [
+        ["css=.icon-tabler-user-star", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "49726c83-bcb7-447c-8afb-b83621e1d69f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add User",
+      "targets": [
+        ["linkText=Add User", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/certificates/users/create')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1d9edda6-1352-4ca5-acf2-1a3cd8a39756",
+    "name": "8.Verify table data rendering",
+    "commands": [{
+      "id": "68247f3a-6fa3-458f-b813-766f810b489f",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates/users",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "152602aa-5a70-443d-8cc7-1cd34831b18c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "054e59f1-1746-40d8-82f3-9c89e8c68bdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4 .page-title",
+      "targets": [
+        ["css=.mb-4 .page-title", "css:finder"],
+        ["xpath=//div[2]/div/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Certificate Users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede02911-83c4-4e70-b04a-977a9a6a55ed",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting_asc",
+      "targets": [
+        ["css=.sorting_asc", "css:finder"],
+        ["xpath=//table[@id='certificate_user']/thead/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"]
+      ],
+      "value": "S.NO"
+    }, {
+      "id": "2527aaa2-9403-4be0-92b3-f3da854cb945",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting:nth-child(2)",
+      "targets": [
+        ["css=.sorting:nth-child(2)", "css:finder"],
+        ["xpath=//table[@id='certificate_user']/thead/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"]
+      ],
+      "value": "NAME"
+    }, {
+      "id": "87635394-2e34-49cf-8043-5b28f6b896da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting:nth-child(3)",
+      "targets": [
+        ["css=.sorting:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='certificate_user']/thead/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//th[3]", "xpath:position"]
+      ],
+      "value": "TOTAL CERTIFICATES"
+    }, {
+      "id": "2a37176a-1c83-45c0-b897-4f177358a3dd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting:nth-child(4)",
+      "targets": [
+        ["css=.sorting:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='certificate_user']/thead/tr/th[4]", "xpath:idRelative"],
+        ["xpath=//th[4]", "xpath:position"]
+      ],
+      "value": "CREATED BY"
+    }, {
+      "id": "1ff0fa21-edbb-42aa-b0ec-c9cc975cd576",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting:nth-child(5)",
+      "targets": [
+        ["css=.sorting:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='certificate_user']/thead/tr/th[5]", "xpath:idRelative"],
+        ["xpath=//th[5]", "xpath:position"]
+      ],
+      "value": "ACTIONS"
+    }]
+  }, {
+    "id": "c267364e-08a1-4fed-a717-f38ba6d91eb6",
+    "name": "10.Validate form fields",
+    "commands": [{
+      "id": "3514666d-8ff7-44ad-9137-b1407dd815d2",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates/users/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dd0de2f-7379-412d-92dc-82d2d6043034",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bf2fea3-e6ff-4c69-80c4-fc862e0c9a9a",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46b861e4-d374-4fed-80d0-e394e0466de7",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ajay.b"
+    }, {
+      "id": "fb1d805a-fdb9-4d6a-aaff-8610823a6549",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-end",
+      "targets": [
+        ["css=.justify-content-end", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbfb0ff5-6f9e-4964-9644-834346e73293",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "382b91a0-c124-407c-ac67-ed8a6eaf52ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be3cf054-6a77-470b-8e7f-bff4bcdf5982",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "490c6e91-11b9-4191-af32-cf30d7e11f81",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "ajayvijay77723@gmail.com"
+    }, {
+      "id": "dc1e6f88-bae5-49e7-8eb1-f467cbbf2e44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success > span",
+      "targets": [
+        ["css=.btn-success > span", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b5b9551f-e9ae-401f-b3f1-0708fd7d5c27",
+    "name": "11.Validate radio button default state",
+    "commands": [{
+      "id": "6d7704db-b0ae-4edc-bc4e-e6de44162d1a",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a085a400-6b38-4940-897f-c523ec5d071f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f7835ca-a812-4634-917c-406ead738505",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Certificate",
+      "targets": [
+        ["linkText=Add New Certificate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Certificate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a69f08f1-0a80-433d-b7d2-1be960317ad0",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4df55d9-9857-4a62-b1bb-6203791178f8",
+      "comment": "",
+      "command": "select",
+      "target": "id=certificate_user_id",
+      "targets": [],
+      "value": "label=ajay.b"
+    }, {
+      "id": "f2627365-2388-4a3f-bb6a-f35f16e2c2f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12bdc6f8-a033-4592-a8fa-661640fd9238",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Proceed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3d5f265a-3a32-4cd8-86d6-b505b1613221",
+    "name": "12.Validate Back button",
+    "commands": [{
+      "id": "9cbde839-c177-4b80-b09b-d520acfe158f",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates/users",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bde360f0-462d-4213-9fff-34351bd291fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a042641d-2be6-451f-9299-72c47bdeda5f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/certificates')])[3]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dd2fa61c-51d8-4054-844e-c05ecd179c5d",
+    "name": "13.Validate client-side validation for existing ICS ID",
+    "commands": [{
+      "id": "99ad372c-248f-4930-8fed-38891f8f9fc6",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e436d54-94ec-41b5-af99-dbc0e8d79806",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "decfd9d7-4e3b-4763-9caf-bccb2a6d054b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Certificate",
+      "targets": [
+        ["linkText=Add New Certificate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Certificate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d7f7d65-7e5e-426f-9c19-3c90af9d2ec2",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "340dd064-ed5b-4dad-8642-925e6d3fde1e",
+      "comment": "",
+      "command": "select",
+      "target": "id=certificate_user_id",
+      "targets": [],
+      "value": "label=ajay.b"
+    }, {
+      "id": "40c1ce51-bde6-466a-8044-9013b572c22f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Proceed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "453abd6a-412a-4cb9-8ebc-8f55dfe6622c",
+      "comment": "",
+      "command": "click",
+      "target": "id=ics_id",
+      "targets": [
+        ["id=ics_id", "id"],
+        ["name=ics_id", "name"],
+        ["css=#ics_id", "css:finder"],
+        ["xpath=//input[@id='ics_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e16bf0-2486-42d3-8727-5fa66aa4ef64",
+      "comment": "",
+      "command": "type",
+      "target": "id=ics_id",
+      "targets": [
+        ["id=ics_id", "id"],
+        ["name=ics_id", "name"],
+        ["css=#ics_id", "css:finder"],
+        ["xpath=//input[@id='ics_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "ICS/C/2025/00105"
+    }]
+  }, {
+    "id": "b6e3871e-7ec6-465e-a7b1-bc2287456fcf",
+    "name": "14.Validate client-side validation for new ICS ID",
+    "commands": [{
+      "id": "312c1271-f8f9-4290-829a-a05e440c5328",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/certificates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16614a3b-23ae-45fb-bd31-a8e7a6e95121",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "934x866",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f1d4514-484e-4cfd-859f-1765f10bd92c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Certificate",
+      "targets": [
+        ["linkText=Add New Certificate", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Certificate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb77450b-4999-492e-8b57-87336825863a",
+      "comment": "",
+      "command": "click",
+      "target": "id=certificate_user_id",
+      "targets": [
+        ["id=certificate_user_id", "id"],
+        ["name=certificate_user_id", "name"],
+        ["css=#certificate_user_id", "css:finder"],
+        ["xpath=//select[@id='certificate_user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c58967d-58b5-4b8b-a4b6-033ea283b641",
+      "comment": "",
+      "command": "select",
+      "target": "id=certificate_user_id",
+      "targets": [],
+      "value": "label=ajay.b"
+    }, {
+      "id": "4549dce1-ef87-4cad-ae0f-dbc2a2258f86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[4]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Proceed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69a2fa3d-2841-4211-94c5-f9f00d20ab9c",
+      "comment": "",
+      "command": "click",
+      "target": "id=ics_id",
+      "targets": [
+        ["id=ics_id", "id"],
+        ["name=ics_id", "name"],
+        ["css=#ics_id", "css:finder"],
+        ["xpath=//input[@id='ics_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be468ef6-73e8-4b9e-be57-2c5eb4c14a8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=ics_id",
+      "targets": [
+        ["id=ics_id", "id"],
+        ["name=ics_id", "name"],
+        ["css=#ics_id", "css:finder"],
+        ["xpath=//input[@id='ics_id']", "xpath:attributes"],
+        ["xpath=//div[@id='certificateModal']/div/div/div[2]/div[5]/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "ICS/C/2025/00106"
+    }]
+  }],
+  "suites": [{
+    "id": "143ff378-500a-47f6-aedd-a672df82925d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9eea0eef-be8c-4e89-9053-eecd58ceaeba"]
+  }],
+  "urls": ["https://cerebro.icrewsystems.com/", "https://cerebro.icrewsystems.com/dashboard/certificates", "https://cerebro.icrewsystems.com/dashboard/certificates/users"],
+  "plugins": []
+}

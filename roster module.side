@@ -1,0 +1,1290 @@
+{
+  "id": "9a0d1ecd-ca80-4c43-a94e-7a110d9ff127",
+  "version": "2.0",
+  "name": "roster",
+  "url": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+  "tests": [{
+    "id": "a797ff67-8283-433c-a0ab-f9ee925cf162",
+    "name": "Open WAR Slot Modal",
+    "commands": [{
+      "id": "160274ea-d389-41bd-bc8d-693468e73612",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20e485de-9eb8-49be-a3a1-c03a130cc7ff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e40c7001-3125-4d6c-95db-1474274a53b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "gokul@icrewsystems.com"
+    }, {
+      "id": "064855a9-93bb-4457-9ff5-e178abbebeae",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "gokul@2003"
+    }, {
+      "id": "ca3bb6f5-4fd2-4ff7-8e3e-e952a408a21a",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_button",
+      "targets": [
+        ["id=login_button", "id"],
+        ["css=#login_button", "css:finder"],
+        ["xpath=//button[@id='login_button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Authenticate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02399ba4-1ea4-4b9e-8fa6-bde49a3af3ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Roster",
+      "targets": [
+        ["linkText=Roster", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Roster')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-menu']/div/div/ul/li[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/rosters')])[2]", "xpath:href"],
+        ["xpath=//li[3]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Roster')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27ea98df-bfd0-465e-9199-f2eb66a1069f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2b984c3d-369e-4a4d-a28f-551078086fc5",
+    "name": "Verify error message when start time is after end time",
+    "commands": [{
+      "id": "50a22dce-064f-48ad-84eb-91733223e874",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "561883ee-3d0f-442c-9d21-d558a61b5887",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b83af2f-9501-4984-a32a-d671b98b8fd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-center",
+      "targets": [
+        ["css=.justify-content-center", "css:finder"],
+        ["xpath=//div[@id='tabs-home-17']/div[2]/div[3]/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91dd954b-92a8-4198-8555-a61755b7fa69",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10477958-9137-4b53-88f3-e816a7a8e705",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "01:32"
+    }, {
+      "id": "50a32acc-bc72-4efd-a20b-56ec523345f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a66a3a9-4725-4804-84db-f26909a66095",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "00:31"
+    }, {
+      "id": "1da9c172-f5a9-4b3a-bbbf-aaac9ea9aaa9",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "665789c6-8d9d-4f6c-885b-a035e6db05be",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .btn-close",
+      "targets": [
+        ["css=#modal-add-war-slot .btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4035b399-d925-4059-9cc0-85c4776fdd00",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "95dc7915-5ac3-4857-8437-ab3058dfdc3d",
+    "name": "Verify error message when slot duration is less than 1 hour",
+    "commands": [{
+      "id": "2524a4a8-ba36-4c70-bbad-318c7832933e",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5f25e22-3282-4f82-9757-a11e5fe1dd0a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f0543aa-1283-4ed5-a1c5-2cd397a7dae2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-center",
+      "targets": [
+        ["css=.justify-content-center", "css:finder"],
+        ["xpath=//div[@id='tabs-home-17']/div[2]/div[3]/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12056c52-de41-422a-b89c-46b09214d62c",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a5106af-409e-4c6e-aef7-cfbf9290cd54",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "01:31"
+    }, {
+      "id": "99850cf4-8d37-4d42-905f-6cb0f41e42d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe247309-bb8d-4c2d-ab44-0cf1dbc1ab9b",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "01:34"
+    }, {
+      "id": "cb3dfa95-6b64-460c-8767-7f9fce0ddb02",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f7ca528-4126-4596-ac9a-fb24d739a529",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.p-3:nth-child(1)",
+      "targets": [
+        ["css=.p-3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b80bca52-abce-45e6-a190-51608ccd037d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-3:nth-child(1)",
+      "targets": [
+        ["css=.p-3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8db8b157-52fb-4ea5-ae96-1f30b8deafd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .btn-close",
+      "targets": [
+        ["css=#modal-add-war-slot .btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfe39a32-0127-4882-b856-e28e5babe8e7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "37e97488-55b7-490f-8668-4a44c1ec268f",
+    "name": "Verify error message when slot exceeds 6 hours",
+    "commands": [{
+      "id": "67ff61f5-2e0f-4e68-8b1d-d5cd87763857",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "639a81ad-c745-4c31-965b-756172c450f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20ffd1db-1920-48dc-9d98-54db496b965b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-center",
+      "targets": [
+        ["css=.justify-content-center", "css:finder"],
+        ["xpath=//div[@id='tabs-home-17']/div[2]/div[3]/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "322d5860-8d7e-4682-a660-79c79a92c350",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79f640d8-6f2d-4d90-992a-58aac46e25ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "01:33"
+    }, {
+      "id": "32051792-3a68-4e32-8b36-45309c881127",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adfc9b14-697b-481c-9ce4-fe0418da9178",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "23:33"
+    }, {
+      "id": "021e6e14-042d-45ef-a8e1-0387fa8902b0",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e8ac42c-75e2-40cf-bf6b-e1b3f401e89f",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.p-3:nth-child(1)",
+      "targets": [
+        ["css=.p-3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a64933b-150e-4d04-b803-f261f88678e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-3:nth-child(1)",
+      "targets": [
+        ["css=.p-3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a64e2f3-d545-4ce8-a4fe-a1d46061c3dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .btn-close",
+      "targets": [
+        ["css=#modal-add-war-slot .btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb754160-6955-46e7-a1b5-152aed093531",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c5204931-510f-484b-9fa3-97756e8b1fe4",
+    "name": "Verify empty start time field disable create slot button",
+    "commands": [{
+      "id": "f0abf380-c8fa-44fe-8dbf-8081415994c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0ae4e13-adf2-478d-83ca-71991b9d8be9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3ccbcb2-fed6-4582-97bd-c48c02c6c318",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-center",
+      "targets": [
+        ["css=.justify-content-center", "css:finder"],
+        ["xpath=//div[@id='tabs-home-17']/div[2]/div[3]/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d913733a-10c1-4f97-83b5-86003859ef5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c5c92c2-7bc8-4994-b88c-1e08aab183f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "03:40"
+    }, {
+      "id": "efb45735-ccf4-4ab2-a453-0cdee866169f",
+      "comment": "",
+      "command": "click",
+      "target": "id=time_difference",
+      "targets": [
+        ["id=time_difference", "id"],
+        ["css=#time_difference", "css:finder"],
+        ["xpath=//h2[@id='time_difference']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div[2]/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please select both time values.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "196e966b-890f-44f7-92b9-479aa841a8ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .btn-close",
+      "targets": [
+        ["css=#modal-add-war-slot .btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "176197d2-43f0-4e52-96fb-390eddf1d40d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "56aae383-21e8-48d0-9e38-ee00288ec810",
+    "name": "Verify  empty end time field disable create slot button",
+    "commands": [{
+      "id": "9ba6f84f-fdbe-4f4d-af48-4c20552dd829",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21f22291-e6cf-4f59-acd1-d5d656de133e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "953eea26-4fc8-4246-85c6-fe506f22b890",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-center",
+      "targets": [
+        ["css=.justify-content-center", "css:finder"],
+        ["xpath=//div[@id='tabs-home-17']/div[2]/div[3]/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6020f2f1-919f-4dbd-92bd-a3c79393c105",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27531bd1-08dc-447a-a8e0-7f632fa2234d",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "02:39"
+    }, {
+      "id": "06521665-d7df-4e41-b1c8-c4d3d237ef50",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .d-flex:nth-child(2)",
+      "targets": [
+        ["css=#modal-add-war-slot .d-flex:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d010002-9279-475f-a79a-c41fcea59b21",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=#modal-add-war-slot .modal-footer",
+      "targets": [
+        ["css=#modal-add-war-slot .modal-footer", "css:finder"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div[3]", "xpath:position"]
+      ],
+      "value": "437.5,32.15625"
+    }, {
+      "id": "a56bb6d3-5ed8-43cb-b85c-151dcce9a70e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .modal-footer",
+      "targets": [
+        ["css=#modal-add-war-slot .modal-footer", "css:finder"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9643d4f9-9919-49ce-9eb6-6ab3d0578836",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .btn-close",
+      "targets": [
+        ["css=#modal-add-war-slot .btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "857d65b9-72cb-405e-9880-405c12eb3856",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cb888469-f877-466b-a080-5bcd8b7e81aa",
+    "name": "Verify successful WAR slot creation",
+    "commands": [{
+      "id": "9c85d00d-7b77-400c-b5e8-cf9ed24043c4",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50f4b074-6ab2-445c-859a-1abb23b1808b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebb4afa7-1109-4102-95ee-587f3c6d583a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-center > .text-muted",
+      "targets": [
+        ["css=.justify-content-center > .text-muted", "css:finder"],
+        ["xpath=//div[@id='tabs-home-17']/div[2]/div[3]/a[4]/div/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4508213c-3eee-4f99-bc3e-688745ed4690",
+      "comment": "",
+      "command": "click",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a64927a-1478-4ebd-96aa-20a12ecb1734",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_start_time",
+      "targets": [
+        ["id=slot_start_time", "id"],
+        ["name=slot_start_time", "name"],
+        ["css=#slot_start_time", "css:finder"],
+        ["xpath=//input[@id='slot_start_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "05:44"
+    }, {
+      "id": "5a4ea173-70b8-434c-afab-bbddcd08db59",
+      "comment": "",
+      "command": "type",
+      "target": "id=slot_end_time",
+      "targets": [
+        ["id=slot_end_time", "id"],
+        ["name=slot_end_time", "name"],
+        ["css=#slot_end_time", "css:finder"],
+        ["xpath=//input[@id='slot_end_time']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[2]/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "09:45"
+    }, {
+      "id": "65518b0e-d327-4e0b-a1dc-1f5727fd9c14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Add WAR slot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d90bd600-da6f-4db6-8bcb-633f22b87e35",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1b185407-ea14-49c9-8aa0-3cc41e0bd33a",
+    "name": "Verify clock-in confirmation message",
+    "commands": [{
+      "id": "500f554d-87e8-41e4-a387-7fd7cd410f51",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters/check-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66905522-8bfc-467b-be92-b7ebae81954e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54d71f5f-c5a6-4372-96c6-2f2d436a294c",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b645bd6e-6d0a-42ba-a776-984a2355ed7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(7) p:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(7) p:nth-child(2)", "css:finder"],
+        ["xpath=//div[5]/div/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,' 01:07 - 06:02')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b94cce30-bba9-423d-aa64-28952250f96b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.theme-light",
+      "targets": [
+        ["css=.theme-light", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cd7bd7e-eaa0-4d12-982c-f0b1bae244b2",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.theme-light",
+      "targets": [
+        ["css=.theme-light", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2eecb0d-c089-4348-ab5a-010ac9d726fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#slotModal86 .btn-close",
+      "targets": [
+        ["css=#slotModal86 .btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='slotModal86']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d01e4dad-fef9-4391-a9af-0a4000eb1628",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8bf2d3cb-1415-4b17-b113-393bb3f1c071",
+    "name": "Verify successful clock-in",
+    "commands": [{
+      "id": "c40ed8c1-f730-486f-833f-361afca8e69c",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters/check-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "838398f4-5441-4f7d-945d-f9a20a429afb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be241601-be92-4b66-afb0-79540e4adeab",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52550fb1-3b65-4794-b117-d4d82f77ee5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(10) .p-2 > div:nth-child(1)",
+      "targets": [
+        ["css=.col:nth-child(10) .p-2 > div:nth-child(1)", "css:finder"],
+        ["xpath=//div[7]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54cb0d73-4c9c-41d9-b9da-8d17f2d32d6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=clockInButton88",
+      "targets": [
+        ["id=clockInButton88", "id"],
+        ["css=#clockInButton88", "css:finder"],
+        ["xpath=//button[@id='clockInButton88']", "xpath:attributes"],
+        ["xpath=//div[@id='slotModal88']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "430ac08e-a840-433b-bd92-f20dfe6e87e9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f90488a7-f283-4093-b4d5-0859f4e8ff89",
+    "name": "Verify that a user cannot clock into multiple slots at the same time",
+    "commands": [{
+      "id": "c3cf67dd-4f0b-4499-8829-d15921bc3984",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters/check-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "651668a1-31db-4a7e-871d-23111ec2697c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2527cf0-94ab-4dd4-a28c-baacde633a01",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,251)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cc199e2-e6c8-478c-abb7-889450ad7556",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,452)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e3416cc-e729-4a98-9b6b-52176330ee0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(7) .p-2",
+      "targets": [
+        ["css=.col:nth-child(7) .p-2", "css:finder"],
+        ["xpath=//div[5]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1828d4a0-733d-4939-8429-305059b64579",
+      "comment": "",
+      "command": "click",
+      "target": "css=#slotModal86 .modal-footer",
+      "targets": [
+        ["css=#slotModal86 .modal-footer", "css:finder"],
+        ["xpath=//div[@id='slotModal86']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41078e08-768b-4e65-8657-f967903913f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#slotModal86 .btn-close",
+      "targets": [
+        ["css=#slotModal86 .btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='slotModal86']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10bc9b97-622e-453c-a4f3-ab01dd8ef1e5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b370432c-259a-4cfc-81d6-eeef64e801f7",
+    "name": "Verify that deleted slots do not appear in the Staff Roster",
+    "commands": [{
+      "id": "ffe82b20-75be-4528-bdf2-74d199807093",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a4b9437-1c07-4678-94ad-ece930f9be26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0576c24-d4b3-4e55-9a3a-3b7f0bfeede9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,245)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf543d25-f640-47cb-b61e-c39df10a871a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(5) span:nth-child(2)",
+      "targets": [
+        ["css=.card:nth-child(5) span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='tabs-home-17']/div[2]/div[3]/a[4]/div/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//a[4]/div/div/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70cbe04a-7acd-4bd6-89cd-e3e2ade92d07",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#modal-view-war-slot .p-3",
+      "targets": [
+        ["css=#modal-view-war-slot .p-3", "css:finder"],
+        ["xpath=//div[@id='modal-view-war-slot']/div/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "252e02a5-44c0-481e-a9f4-3829c728fff0",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#modal-view-war-slot .form-check-label",
+      "targets": [
+        ["css=#modal-view-war-slot .form-check-label", "css:finder"],
+        ["xpath=//div[@id='modal-view-war-slot']/div/div/div[2]/div/div[2]/div[2]/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'[WIP] I need a workspace to be booked (via MyHQ)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b8473b3-9b04-41a7-ac61-2ba6d525709c",
+      "comment": "",
+      "command": "click",
+      "target": "id=modal-war-view-delete-button",
+      "targets": [
+        ["id=modal-war-view-delete-button", "id"],
+        ["css=#modal-war-view-delete-button", "css:finder"],
+        ["xpath=//button[@id='modal-war-view-delete-button']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-view-war-slot']/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete WAR slot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb9cfbe1-9f32-4e37-92ac-b0b2114c6f20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2ff4046-195c-44f0-a04c-3ad2ab2225b7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "820b37b7-25f1-42c9-88c5-fa85ea3e59c9",
+    "name": "Verify that 'Add war ' button is disabled until required fields are filled",
+    "commands": [{
+      "id": "21b38c70-24fa-4fec-8672-49e6577cb6c6",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2673a754-e666-4c4a-aa97-42e4fa40e001",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "330ce6c7-017b-4905-a092-7bd4b60f5299",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-center",
+      "targets": [
+        ["css=.justify-content-center", "css:finder"],
+        ["xpath=//div[@id='tabs-home-17']/div[2]/div[3]/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65b67c5e-e447-48fb-8293-63241503e369",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .modal-footer",
+      "targets": [
+        ["css=#modal-add-war-slot .modal-footer", "css:finder"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcc3b255-4374-44d1-980d-97a244a23b02",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modal-add-war-slot .btn-close",
+      "targets": [
+        ["css=#modal-add-war-slot .btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='modal-add-war-slot']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d64b3d44-e509-4fe8-aba4-839ed56651ea",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "129d83de-774f-4d90-b742-d9221fe93c37",
+    "name": "Verify clock-out requires a note",
+    "commands": [{
+      "id": "18bdfaa0-85d7-4411-9841-4f309f233527",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters/check-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a6ee5c4-0c9a-4944-b241-00975476431f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b803431-be09-414c-8d9a-6bfe5b7d63c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(7) p:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(7) p:nth-child(2)", "css:finder"],
+        ["xpath=//div[5]/div/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,' 01:07 - 06:02')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbed37de-5e34-4cac-8d36-8d2fe8901d1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#slotModal86 .btn-secondary",
+      "targets": [
+        ["css=#slotModal86 .btn-secondary", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='slotModal86']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b333615-dd15-4ba7-9f4a-dcdaaaf8ce36",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b9e9969d-55ae-40be-8cae-7c280ac418d0",
+    "name": "Verify successful clock-out",
+    "commands": [{
+      "id": "a59026db-693e-45a9-8c76-a456ac24eb9a",
+      "comment": "",
+      "command": "open",
+      "target": "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed100dd9-17be-4c99-b2f2-4dfd33187f87",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8f10477-2269-4f20-8735-04ada05b7060",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-2 span:nth-child(2)",
+      "targets": [
+        ["css=.px-2 span:nth-child(2)", "css:finder"],
+        ["xpath=(//a[@id='timecard-clock-out']/span[2])[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dae1057b-30de-407f-a630-8cfde3f80cfa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(7) p:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(7) p:nth-child(2)", "css:finder"],
+        ["xpath=//div[5]/div/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,' 01:07 - 06:02')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "086571d7-1368-4dcf-8b14-d8eb8605c0c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=noteInput86",
+      "targets": [
+        ["id=noteInput86", "id"],
+        ["css=#noteInput86", "css:finder"],
+        ["xpath=//textarea[@id='noteInput86']", "xpath:attributes"],
+        ["xpath=//div[@id='slotModal86']/div/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f9c2f04-58f0-47a0-9145-ee2a048b1e4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=noteInput86",
+      "targets": [
+        ["id=noteInput86", "id"],
+        ["css=#noteInput86", "css:finder"],
+        ["xpath=//textarea[@id='noteInput86']", "xpath:attributes"],
+        ["xpath=//div[@id='slotModal86']/div/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": "i finished my work"
+    }, {
+      "id": "f0ffe223-4b8e-497e-a5d1-4c17807de676",
+      "comment": "",
+      "command": "click",
+      "target": "id=clockOutButton86",
+      "targets": [
+        ["id=clockOutButton86", "id"],
+        ["css=#clockOutButton86", "css:finder"],
+        ["xpath=//button[@id='clockOutButton86']", "xpath:attributes"],
+        ["xpath=//div[@id='slotModal86']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cefcef4-580a-46fa-b5e6-cefd3e3c9527",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back to Roster",
+      "targets": [
+        ["linkText=Back to Roster", "linkText"],
+        ["css=.d-flex > .btn", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://cerebro.icrewsystems.com/dashboard/rosters')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back to Roster')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00ed0f2f-4fa8-4861-bddf-5b6d69b991ce",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9b74b195-bb78-4cc7-80e6-bf8bc55e1d55",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://cerebro.icrewsystems.com/login", "https://cerebro.icrewsystems.com/dashboard/rosters#tabs-home-17"],
+  "plugins": []
+}
